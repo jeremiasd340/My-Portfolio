@@ -1,0 +1,114 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #3498db;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#navbar {
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    padding: 25px;
+    width: 100%;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color .3s;
+}
+
+#navbar a:hover {
+    color: #3498db;
+}
+
+#profile-link {
+    color: #3498db;
+}
+
+main {
+    padding: 100px;
+}
+
+#welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    width: 100%;
+    height: 100vh;
+}
+
+#welcome-section h1 {
+    color: white;
+}
+
+article h3 {
+    color: white;
+    text-align: center;
+}
+
+article p {
+    color: white;
+    text-align: center;
+}
+
+article a {
+    background-color: red;
+}
+
+article img {
+    width: 100%;
+    height: 100%;
+    transition: scale .3s;
+}
+
+article img:hover {
+    scale: 1.1;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 20px;
+}
+
+.project-tile {
+    box-shadow: 1px 1px 10px 3px black;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:425px) {
+    #welcome-section h1 {
+        font-size: 25px;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #navbar {
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        margin: 0;
+    }
+
+    .a-hidden {
+        display: none;
+    }
+}
