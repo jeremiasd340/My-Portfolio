@@ -83,6 +83,10 @@ article img:hover {
     padding: 20px;
 }
 
+#projects a {
+    text-decoration: none;
+}
+
 .project-tile {
     box-shadow: 1px 1px 10px 3px black;
     margin-bottom: 20px;
